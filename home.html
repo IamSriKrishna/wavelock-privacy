@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101010">
+
+    <title>Privacy Policy | WakeLock</title>
+
+    <meta name="description" content="Read the WakeLock Privacy Policy to understand how your information is accessed, stored and protected.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background: #101010;
+            --surface: #191919;
+            --surface-light: #222222;
+            --primary: #ff9f43;
+            --text: #ffffff;
+            --secondary: #a5a5a5;
+            --border: rgba(255,255,255,0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(16,16,16,0.92);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            background: var(--primary);
+            color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+        }
+
+        .brand span {
+            color: var(--primary);
+        }
+
+        .nav-label {
+            color: var(--secondary);
+            font-size: 13px;
+        }
+
+        .hero {
+            padding: 90px 24px 65px;
+            text-align: center;
+            background:
+                radial-gradient(
+                    ellipse at top,
+                    rgba(255,159,67,0.13),
+                    transparent 65%
+                );
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 7px 16px;
+            border: 1px solid rgba(255,159,67,0.3);
+            border-radius: 30px;
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 64px);
+            line-height: 1.15;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            max-width: 620px;
+            margin: auto;
+            color: var(--secondary);
+            font-size: 16px;
+        }
+
+        .updated {
+            margin-top: 25px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        .layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 24px 100px;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            padding: 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+        }
+
+        .sidebar h3 {
+            font-size: 13px;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 9px 12px;
+            margin-bottom: 5px;
+            color: #bdbdbd;
+            font-size: 13px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background: rgba(255,159,67,0.1);
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .content {
+            min-width: 0;
+        }
+
+        .intro-card {
+            padding: 28px;
+            margin-bottom: 35px;
+            background: linear-gradient(
+                135deg,
+                rgba(255,159,67,0.12),
+                rgba(255,159,67,0.02)
+            );
+            border: 1px solid rgba(255,159,67,0.2);
+            border-radius: 18px;
+        }
+
+        .intro-card h2 {
+            color: var(--primary);
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .intro-card p {
+            color: #c5c5c5;
+            font-size: 14px;
+        }
+
+        .policy-section {
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border);
+            scroll-margin-top: 100px;
+        }
+
+        .policy-section h2 {
+            font-size: 21px;
+            margin-bottom: 15px;
+            letter-spacing: -0.4px;
+        }
+
+        .policy-section h2 span {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        .policy-section h3 {
+            font-size: 15px;
+            margin: 22px 0 8px;
+            color: #eeeeee;
+        }
+
+        .policy-section p {
+            color: var(--secondary);
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+
+        .policy-section ul {
+            padding-left: 22px;
+            margin: 12px 0;
+        }
+
+        .policy-section li {
+            color: var(--secondary);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .contact-card {
+            margin-top: 35px;
+            padding: 30px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+        }
+
+        .contact-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: var(--secondary);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: var(--primary);
+            color: #111;
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 9px;
+        }
+
+        .contact-link:hover {
+            background: #ffb66d;
+            text-decoration: none;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #777;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: var(--primary);
+        }
+
+        @media(max-width: 850px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .sidebar nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3px;
+            }
+        }
+
+        @media(max-width: 500px) {
+            .nav-container {
+                padding: 15px 18px;
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .hero {
+                padding: 65px 20px 45px;
+            }
+
+            .layout {
+                padding: 15px 18px 70px;
+            }
+
+            .sidebar {
+                padding: 18px;
+            }
+
+            .sidebar nav {
+                grid-template-columns: 1fr;
+            }
+
+            .policy-section h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="brand-icon">W</div>
+                Wake<span>Lock</span>
+            </div>
+
+            <div class="nav-label">Privacy & Legal</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-badge">Your Privacy Matters</div>
+
+        <h1>Privacy <span>Policy</span></h1>
+
+        <p>
+            Transparency matters. Learn how WakeLock handles your
+            information while helping you build better habits,
+            manage your time and stay focused.
+        </p>
+
+        <div class="updated">
+            Effective Date: November 21, 2026
+            &nbsp; | &nbsp;
+            Last Updated: November 21, 2026
+        </div>
+    </section>
+
+    <main class="layout">
+
+        <aside class="sidebar">
+            <h3>On this page</h3>
+
+            <nav>
+                <a href="#introduction">Introduction</a>
+                <a href="#information">Information We Access</a>
+                <a href="#usage">How We Use Information</a>
+                <a href="#storage">Data Storage</a>
+                <a href="#permissions">Permissions</a>
+                <a href="#sharing">Data Sharing</a>
+                <a href="#retention">Data Retention</a>
+                <a href="#security">Data Security</a>
+                <a href="#children">Children's Privacy</a>
+                <a href="#third-party">Third-Party Services</a>
+                <a href="#changes">Policy Changes</a>
+                <a href="#rights">Your Privacy Rights</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </aside>
+
+        <article class="content">
+
+            <div class="intro-card">
+                <h2>Privacy by design. Focus by choice.</h2>
+                <p>
+                    WakeLock follows a local-first approach.
+                    Your productivity information is designed to
+                    remain on your device rather than being
+                    automatically uploaded to a cloud account.
+                </p>
+            </div>
+
+            <section class="policy-section" id="introduction">
+                <h2><span>01.</span> Introduction</h2>
+
+                <p>
+                    Welcome to WakeLock. WakeLock is a productivity
+                    and focus management application designed to help
+                    users build better habits, manage daily tasks,
+                    improve concentration and maintain a productive
+                    lifestyle.
+                </p>
+
+                <p>
+                    Your privacy is important to us. This Privacy
+                    Policy explains what information WakeLock accesses,
+                    how it is used, where it is stored and how it is
+                    protected.
+                </p>
+            </section>
+
+            <section class="policy-section" id="information">
+                <h2><span>02.</span> Information We Access</h2>
+
+                <p>
+                    WakeLock may access or store the following
+                    information to provide its features.
+                </p>
+
+                <h3>Personal Profile Information</h3>
+                <ul>
+                    <li>Name provided during onboarding.</li>
+                    <li>Personal productivity goals.</li>
+                    <li>Experience level.</li>
+                    <li>Daily available working time.</li>
+                    <li>Preferred working hours.</li>
+                </ul>
+
+                <h3>Productivity Information</h3>
+                <ul>
+                    <li>Daily missions and task progress.</li>
+                    <li>Completed and pending tasks.</li>
+                    <li>Habit records and completion history.</li>
+                    <li>Productivity streaks and achievements.</li>
+                    <li>Pomodoro focus session history.</li>
+                </ul>
+
+                <h3>Events and Reminders</h3>
+                <ul>
+                    <li>Event titles and descriptions.</li>
+                    <li>Event dates and times.</li>
+                    <li>Recurrence and reminder preferences.</li>
+                    <li>Event completion status.</li>
+                </ul>
+
+                <h3>Application Selection Information</h3>
+                <p>
+                    If you use Strict Mode, WakeLock may access
+                    installed, launchable application information
+                    to display applications for selection.
+                </p>
+
+                <ul>
+                    <li>Application names.</li>
+                    <li>Application package identifiers.</li>
+                    <li>Your selected application preferences.</li>
+                </ul>
+            </section>
+
+            <section class="policy-section" id="usage">
+                <h2><span>03.</span> How We Use Information</h2>
+
+                <p>Information accessed by WakeLock is used to:</p>
+
+                <ul>
+                    <li>Personalize your productivity experience.</li>
+                    <li>Recommend daily missions based on your goals.</li>
+                    <li>Track habits, progress and achievements.</li>
+                    <li>Manage focus sessions.</li>
+                    <li>Schedule events and reminders.</li>
+                    <li>Provide Strict Mode configuration.</li>
+                    <li>Save your preferences and restore progress.</li>
+                </ul>
+
+                <p class="highlight">
+                    We do not sell your personal information.
+                </p>
+            </section>
+
+            <section class="policy-section" id="storage">
+                <h2><span>04.</span> Data Storage</h2>
+
+                <p>
+                    WakeLock is designed with a local-first approach.
+                    Information generated and entered within the
+                    application is stored locally on your device
+                    using its local database.
+                </p>
+
+                <p>The current version does not require:</p>
+
+                <ul>
+                    <li>User account registration.</li>
+                    <li>A cloud account.</li>
+                    <li>A remote application backend.</li>
+                    <li>Firebase authentication or cloud storage.</li>
+                </ul>
+
+                <p>
+                    Your productivity information is not
+                    automatically uploaded to our servers.
+                    Uninstalling the application or clearing its
+                    application data may permanently remove
+                    locally stored information.
+                </p>
+            </section>
+
+            <section class="policy-section" id="permissions">
+                <h2><span>05.</span> Permissions</h2>
+
+                <p>
+                    WakeLock may request certain Android permissions
+                    to provide its functionality.
+                </p>
+
+                <h3>Notifications</h3>
+                <p>
+                    Used to deliver reminders and productivity-related
+                    notifications.
+                </p>
+
+                <h3>Exact Alarm Permission</h3>
+                <p>
+                    Used to schedule reminders and notifications at
+                    user-selected times.
+                </p>
+
+                <h3>Installed Application Visibility</h3>
+                <p>
+                    Used to display installed applications when
+                    configuring Strict Mode.
+                </p>
+
+                <h3>Accessibility Permission</h3>
+                <p>
+                    If Strict Mode app-blocking functionality is
+                    enabled, Android Accessibility Service permission
+                    may be requested.
+                </p>
+
+                <p>
+                    This permission is intended to identify the
+                    currently foreground application and support
+                    configured focus restrictions, with the user's
+                    explicit consent.
+                </p>
+
+                <p>
+                    WakeLock does not intend to collect passwords,
+                    read personal messages, record keystrokes or
+                    capture screen contents through this functionality.
+                </p>
+
+                <p>
+                    Users remain in control of Android accessibility
+                    permissions and can disable the service through
+                    Android settings. Essential system functions and
+                    emergency calling must remain accessible.
+                </p>
+            </section>
+
+            <section class="policy-section" id="sharing">
+                <h2><span>06.</span> Data Sharing</h2>
+
+                <p>
+                    WakeLock does not sell, rent or trade personal
+                    information.
+                </p>
+
+                <p>
+                    The current local-only version does not transmit
+                    productivity information to third-party
+                    advertising or analytics services.
+                </p>
+
+                <p>
+                    Information stored locally may be accessible
+                    to the device owner and to anyone who has access
+                    to the unlocked device.
+                </p>
+            </section>
+
+            <section class="policy-section" id="retention">
+                <h2><span>07.</span> Data Retention and Deletion</h2>
+
+                <p>
+                    Your information remains stored on your device
+                    until you delete it or remove the application's
+                    stored data.
+                </p>
+
+                <p>You can remove locally stored information by:</p>
+
+                <ul>
+                    <li>Using available deletion options within the application.</li>
+                    <li>Clearing WakeLock's application storage through Android settings.</li>
+                    <li>Uninstalling WakeLock.</li>
+                </ul>
+
+                <p>
+                    Deletion of application data may result in
+                    permanent loss of your productivity history
+                    and settings.
+                </p>
+            </section>
+
+            <section class="policy-section" id="security">
+                <h2><span>08.</span> Data Security</h2>
+
+                <p>
+                    We take reasonable measures to protect
+                    information stored within the application.
+                    However, no electronic storage method can
+                    guarantee absolute security.
+                </p>
+
+                <p>
+                    We recommend keeping your device updated,
+                    using a secure screen lock and protecting
+                    access to your device.
+                </p>
+            </section>
+
+            <section class="policy-section" id="children">
+                <h2><span>09.</span> Children's Privacy</h2>
+
+                <p>
+                    WakeLock is intended for general productivity
+                    and personal organization.
+                </p>
+
+                <p>
+                    We do not knowingly collect personal information
+                    from children through online services. The
+                    current version does not provide an online
+                    account registration or cloud data collection
+                    service.
+                </p>
+
+                <p>
+                    Parents or guardians should supervise children's
+                    use of mobile applications.
+                </p>
+            </section>
+
+            <section class="policy-section" id="third-party">
+                <h2><span>10.</span> Third-Party Services</h2>
+
+                <p>
+                    WakeLock may rely on Android operating system
+                    functionality for notifications, alarms,
+                    installed application visibility and
+                    accessibility features.
+                </p>
+
+                <p>
+                    These platform services are governed by their
+                    respective providers' privacy policies and terms.
+                </p>
+            </section>
+
+            <section class="policy-section" id="changes">
+                <h2><span>11.</span> Changes to This Privacy Policy</h2>
+
+                <p>
+                    We may update this Privacy Policy when WakeLock
+                    introduces new features, changes its data
+                    practices or when legal requirements change.
+                </p>
+
+                <p>
+                    Any updated version will be published with
+                    a revised Last Updated date. Users are
+                    encouraged to review this policy periodically.
+                </p>
+            </section>
+
+            <section class="policy-section" id="rights">
+                <h2><span>12.</span> Your Privacy Rights</h2>
+
+                <p>You can:</p>
+
+                <ul>
+                    <li>Choose what personal information you enter into WakeLock.</li>
+                    <li>Manage application permissions through Android settings.</li>
+                    <li>Configure or disable supported features.</li>
+                    <li>Delete locally stored application data.</li>
+                </ul>
+
+                <p>
+                    For privacy-related questions or requests,
+                    contact us using the details below.
+                </p>
+            </section>
+
+            <section class="contact-card" id="contact">
+                <h2>Questions about your privacy?</h2>
+
+                <p>
+                    If you have questions, concerns or requests
+                    regarding this Privacy Policy, contact us.
+                </p>
+
+                <p>
+                    <strong>Application:</strong> WakeLock
+                </p>
+
+                <p>
+                    <strong>Developer:</strong>
+                    Sri Krishna M
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    srik090704@gmail.com
+                </p>
+
+                <a class="contact-link"
+                   href="mailto:YOUR_SUPPORT_EMAIL">
+                    Contact Support
+                </a>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            © 2026 <strong>WakeLock</strong>.
+            Built for focus. Designed for productivity.
+        </p>
+
+        <p style="margin-top: 8px;">
+            Privacy Policy
+        </p>
+    </footer>
+
+</body>
+</html>
